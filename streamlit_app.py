@@ -53,7 +53,6 @@ def get_fruit_load_list():
   
 # Add button to load the fruit
 if streamlit.button('Get Fruit Load List'):
-  # Moved the row with Snowflake secret
   my_data_rows = get_fruit_load_list()
   streamlit.dataframe(my_data_rows)
 
